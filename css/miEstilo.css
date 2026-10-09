@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenido{
+    height: 100vh;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+nav{
+    position: fixed;
+    left: 5%;
+    top: 25%;
+    z-index: 100;
+    transition: 0.3s ease;
+    transform: translateX(-40%);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+}
+ul a{
+    display: block;
+    color: rgba(165, 165, 165, 0.747);
+    text-decoration: none;
+    text-align: center;
+   
+}
+a:hover{
+    transform: translateX(25%);
+    color: white;
+}
+#imagen0{
+    background-image: url("../images/f1.jfif");
+}
+#imagen1{
+    background-image: url("../images/mclaren1.jpeg");
+}
+#imagen2{
+    background-image: url("../images/mercedes.jfif");
+}
+#imagen3{
+    background-image: url("../images/redbull.jfif");
+}
+#imagen4{
+    background-image: url("../images/ferrari.jfif");
+}
+/* Botón */
+.button {
+  position: relative;
+  left: 43%;
+  top: 80%;
+  border-radius: 4px;
+  background-color: #e7e5e538;
+  border: none;
+  color: #ffffffb6;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

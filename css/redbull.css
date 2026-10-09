@@ -1,0 +1,133 @@
+:root {
+    --rojo-redbull: #e6002b;   
+    --amarillo-redbull: #ffcc00;
+    --azul-marino: #001a30;     
+    --fondo: #0a0e17;
+    --panel: #131a29;
+    --texto: #f5f5f5;
+    --suave: #93a1b8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 8%;
+    border-bottom: 1px solid #ffffff26;
+}
+
+.logo {
+    color: var(--amarillo-redbull);
+    font-weight: 900;
+    letter-spacing: .2em;
+}
+
+nav a {
+    color: var(--texto);
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+nav a:hover {
+    color: var(--rojo-redbull);
+}
+
+header {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 7rem 10%;
+    border-bottom: 5px solid var(--rojo-redbull);
+    /* Fondo radial con tonos azul marino profundo y destello rojo/amarillo */
+    background: radial-gradient(ellipse at 82% 50%, #1e2840 0, #0d1627 24%, transparent 58%), #0a0e17;
+}
+
+.hero {
+    max-width: 680px;
+}
+
+.colores {
+    color: var(--amarillo-redbull);
+    font-weight: bold;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: .5rem 0 1rem;
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    line-height: .95;
+    text-transform: uppercase;
+}
+
+.hero p {
+    max-width: 570px;
+    color: var(--suave);
+    font-size: 1.15rem;
+}
+
+main {
+    width: min(1050px, 84%);
+    margin: 4rem auto;
+}
+
+h2 {
+    margin: .3rem 0 1rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.intro {
+    max-width: 760px;
+    color: var(--suave);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin: 2rem 0 4rem;
+}
+
+.card {
+    padding: 1.5rem;
+    background: var(--panel);
+    border-top: 3px solid var(--rojo-redbull);
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+    color: var(--suave);
+}
+
+
+footer {
+    padding: 1.5rem;
+    color: var(--suave);
+    text-align: center;
+    border-top: 1px solid #1c2638;
+}
